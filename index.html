@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="loading()">
+    <div id="login_form" class="form">
+        <h1>login</h1>
+        <input id="username_login" type="text" name="username" placeholder="username" required>
+        <input id="password_login" type="password" name="password" placeholder="password" required>
+        <button onclick="postLogin()">submit</button>
+    </div>
+    <div id="signup_form" class="form">
+        <h1>signup</h1>
+        <input id="username_signup" type="text" name="username" placeholder="username" required>
+        <input id="password_signup" type="password" name="password" placeholder="password" required>
+        <button onclick="postSignup()">submit</button>
+    </div>
+    <div id="post" style="display: none;">
+        <input id="title_field" type="text" name="title" placeholder="title" required>
+        <input type="text" name="body" id="body_field" placeholder="body" required>
+        <button onclick="addPost()">Add</button>
+    </div>
+    <div id="content"></div>
+</body>
+<script src="script.js" ></script>
+</html>
